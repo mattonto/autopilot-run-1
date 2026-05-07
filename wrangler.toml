@@ -1,0 +1,7 @@
+name = "todos-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "TODOS"
+id = "placeholder-id"
