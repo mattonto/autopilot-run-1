@@ -1,0 +1,24 @@
+{
+  "name": "todo-api-worker",
+  "version": "1.0.0",
+  "description": "A todo list API built with Hono on Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "npm run build && wrangler test",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "hono": "^3.12.12",
+    "@cloudflare/workers-types": "^4.20240912.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.4",
+    "wrangler": "^3.65.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
